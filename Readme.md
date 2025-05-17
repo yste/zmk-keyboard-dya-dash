@@ -1,13 +1,14 @@
+# ZMK board definition for [DYA Dash](https://github.com/cormoran/dya-dash-keyboard) keyboard
+
 ## How to use from your zmk-config repository
 
-TODO
+Please check https://github.com/cormoran/zmk-config-dya-dash-template
 
 ## Local development in this repository
 
 ```
-west init -l config
-west update # dependencies are downloaded under external/
+make init
+make build # uf2 shows up under build directory
 
-bash local_build.sh left
-bash local_build.sh right -s
+# make debug # for usb-logging enabled farm
 ```

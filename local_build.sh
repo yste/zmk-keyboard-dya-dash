@@ -34,19 +34,14 @@ DYA_SHEILD=dya_dash_$SPLIT
 BUILD_DIR=$REPO_ROOT/build/${DYA_SHEILD}${BUILD_DIR_SUFFIX}
 ZMK_APP_DIR=$REPO_ROOT/external/zmk/app
 
-cd $ZMK_APP_DIR
-ZMK_EXTRA_MODULES=""
-ZMK_EXTRA_MODULES="${ZMK_EXTRA_MODULES};${REPO_ROOT}/external/zmk-driver-animation"
-ZMK_EXTRA_MODULES="${ZMK_EXTRA_MODULES};${REPO_ROOT}/external/zmk-driver-ext-power-transient"
-ZMK_EXTRA_MODULES="${ZMK_EXTRA_MODULES};${REPO_ROOT}/external/zmk-pmw3610-driver"
-ZMK_EXTRA_MODULES="${ZMK_EXTRA_MODULES};${REPO_ROOT}/external/zmk-feature-default-layer"
-ZMK_EXTRA_MODULES="${ZMK_EXTRA_MODULES};${REPO_ROOT}"
+west zephyr-export
 
 west build \
-    $WEST_ADDITIONAL_OPTS \
+    -s $ZMK_APP_DIR \
     -d $BUILD_DIR \
     -b seeeduino_xiao_ble \
+    $WEST_ADDITIONAL_OPTS \
     -- \
     -DSHIELD=$DYA_SHEILD \
-    -DZMK_EXTRA_MODULES="$ZMK_EXTRA_MODULES"
+    -DZMK_CONFIG="$REPO_ROOT"
 cp $BUILD_DIR/zephyr/zmk.uf2 $BUILD_DIR/../zmk_${DYA_SHEILD}${BUILD_DIR_SUFFIX}.uf2
