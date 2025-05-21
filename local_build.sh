@@ -43,5 +43,5 @@ west build \
     $WEST_ADDITIONAL_OPTS \
     -- \
     -DSHIELD=$DYA_SHEILD \
-    -DZMK_CONFIG="$REPO_ROOT"
+    -DZMK_EXTRA_MODULES="$REPO_ROOT" -DZMK_CONFIG="$REPO_ROOT/config"
 cp $BUILD_DIR/zephyr/zmk.uf2 $BUILD_DIR/../zmk_${DYA_SHEILD}${BUILD_DIR_SUFFIX}.uf2
