@@ -17,3 +17,6 @@ init:
 
 clean:
 	rm -rf .west build external
+
+clean-build:
+	rm -rf build
