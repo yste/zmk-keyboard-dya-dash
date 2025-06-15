@@ -32,7 +32,7 @@ done
 REPO_ROOT=$(git rev-parse --show-superproject-working-tree --show-toplevel | head -1)
 DYA_SHEILD=dya_dash_$SPLIT
 BUILD_DIR=$REPO_ROOT/build/${DYA_SHEILD}${BUILD_DIR_SUFFIX}
-ZMK_APP_DIR=$REPO_ROOT/external/zmk/app
+ZMK_APP_DIR=$REPO_ROOT/zmk/app
 
 west zephyr-export
 
