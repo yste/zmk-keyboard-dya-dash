@@ -110,6 +110,19 @@
             bindings = <&macro_param_1to1 &tog_off MACRO_PLACEHOLDER &macro_param_1to1 &mo MACRO_PLACEHOLDER>;
         };
     };
+    combos {
+        compatible = "zmk,combos";
+        setting_left {
+            timeout-ms = <10>;
+            key-positions = <47 50>;
+            bindings = <&kp C_VOL_DN>;
+        };
+        setting_right {
+            timeout-ms = <10>;
+            key-positions = <47 49>;
+            bindings = <&kp C_VOL_UP>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
