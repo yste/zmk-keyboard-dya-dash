@@ -27,11 +27,12 @@ Install `west` command ([official document](https://docs.zephyrproject.org/lates
 
 ```
 make init # warning!! It downloads few GB files...
-make build # uf2 shows up under build directory
-
-# make debug # for usb-logging enabled farm
+make build -j4 # uf2 shows up under build directory
 ```
 
-If build succeeds, the firmware shows up under `build` directory like `zmk_dya_dash_left.uf2` and `zmk_dya_dash_right_studio.uf2`.
+If build succeeds, the firmware shows up under `build` directory like `zmk_dya_dash_left.uf2` and `zmk_dya_dash_right_trackball.uf2`.
 
-`make debug` builds usb logging supported firmware (`*_debug.uf2`) for debugging purpose.
+## Trackball enable/disable with snippet
+
+Trackball setting is enabled by specifying snippet `left-trackball` or `right-trackball`. (see `local_build.sh`.).
+If neither snippet is specified, trackball feature is disabled.
