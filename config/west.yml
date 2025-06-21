@@ -10,6 +10,7 @@ manifest:
     - name: zmk
       import:
         file: app/west.yml
+        path-prefix: external
       clone-depth: 1
     - name: zmk-pmw3610-driver
       path: external/zmk-pmw3610-driver

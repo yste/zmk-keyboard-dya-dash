@@ -1,6 +1,45 @@
 name: Build ZMK firmware
-on: [push, pull_request, workflow_dispatch]
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
 
 jobs:
   build:
-    uses: cormoran/zmk/.github/workflows/build-user-config.yml@main
+    runs-on: ubuntu-latest
+    container:
+      image: zmkfirmware/zmk-build-arm:stable
+    name: Build
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Cache west modules
+        uses: actions/cache@v4
+        continue-on-error: true
+        env:
+          cache_name: cache-west-modules
+        with:
+          path: external/
+          key: ${{ runner.os }}-build-${{ env.cache_name }}-${{ hashFiles('**/west.yml') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache_name }}-
+      - name: Init
+        run: |
+          git config --global --add safe.directory ${{ github.workspace }}
+          make init
+      - name: Build
+        run: make build-all -j6
+      - name: Copy artifacts
+        shell: sh -x {0}
+        run: |
+          mkdir -p build/artifacts
+          cp -r build/*.uf2 build/artifacts/
+
+      - name: Archive artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: artifact-dya-dash
+          path: build/artifacts
