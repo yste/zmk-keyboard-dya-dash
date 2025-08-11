@@ -248,10 +248,10 @@
 };
 
 &spi0 {
-    trackball_r: trackball_r@0 {
+    trackball_r: trackball_r {
         status = "disabled";
     };
-    trackball_l: trackball_l@1 {
+    trackball_l: trackball_l {
         status = "disabled";
     };
 };
