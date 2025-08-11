@@ -74,52 +74,22 @@
 
             mods = <(MOD_LCTL)>;
         };
-
-        // output for tap, bt for hold
-
-        outbt: out_bt {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <1000>;
-            bindings = <&bt1param>, <&out>;
-
-            display-name = "Out-BT";
-        };
-
-        tog_off: toggle_layer_off_only {
-            compatible = "zmk,behavior-toggle-layer";
-            #binding-cells = <1>;
-            display-name = "Toggle Layer Off";
-            toggle-mode = "off";
-        };
     };
 
     macros {
+        // Disconnect from all once for reliable connection to selected profile.
+        // ZMK automatically reconnects to current profile right after disconnection.
         out_bt_nxt: out_bt_nxt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <50>;
-
-            // Disconnect from all once for reliable connection to selected profile.
-            // ZMK automatically reconnects to current profile right after disconnection.
-
             bindings = <&out OUT_BLE &bt BT_NXT &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
         };
-
+        // Change default layer for current profile to next layer
         dfnxt: dfnxt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&df DF_INC &animtrig ANM_TRG 2>;
-        };
-
-        // macro to use &bt in hold-tap. two param command is not supported in hold-tap for now.
-
-        bt1param: bt_1param {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            wait-ms = <0>;
-            bindings = <&macro_param_1to1 &bt MACRO_PLACEHOLDER 0>;
         };
     };
 
@@ -174,8 +144,8 @@
             &kp LCTRL                  &kp A         &kp S     &kp D     &kp F         &kp G      &hbackspace   &jenter            &kp K     &kp L      &kp SEMI  &kp SQT
             &kp LSHIFT                 &kp Z         &kp X     &kp C     &kp V         &kp B      &kp B         &kp N              &kp M     &kp COMMA  &kp DOT   &kp FSLH
             &mo CONFIG_L  &kp LWIN  &kp LALT  &kp SPACE &mo LEFT_L     &mo RIGHT_L   &kp SPACE          &kp RALT  &kp RWIN
-            &outbt BT_CLR_CMD OUT_TOG  &out_bt_nxt                                                    &kp UP        &kp LEFT           &kp DOWN  &kp RIGHT
-            &mo SCROLL_L               &mo TRACKBALL_L2  &none     &none                                  &mo SCROLL_L  &mo TRACKBALL_L2    &none     &none
+            &out OUT_TOG  &out_bt_nxt                                                    &kp UP        &kp LEFT           &kp DOWN  &kp RIGHT
+            &mo TRACKBALL_L2           &mo SCROLL_L  &none     &none                                  &mo SCROLL_L  &mo TRACKBALL_L2    &none     &none
             >;
         };
 
