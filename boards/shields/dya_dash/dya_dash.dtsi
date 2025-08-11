@@ -137,7 +137,7 @@
         // input-processors = <&zip_temp_layer 8 500>;
         trackball_scroller: scroller_0 {
             // layers = <9>;
-            input-processors = <&zip_xy_scaler 1 60 &zip_xy_to_scroll_mapper>;
+            input-processors = <&zip_xy_scaler 1 50 &zip_xy_to_scroll_mapper>;
         };
     };
     // Enabled by default to support trackball on peripheral side.
@@ -147,7 +147,7 @@
         // input-processors = <&zip_temp_layer 8 500>;
         trackball_scroller_l: scroller_1 {
             // layers = <9>;
-            input-processors = <&zip_xy_scaler 1 60 &zip_xy_to_scroll_mapper>;
+            input-processors = <&zip_xy_scaler 1 50 &zip_xy_to_scroll_mapper>;
         };
     };
 
@@ -245,4 +245,13 @@
     full-ohms = <(1000000 + 470000)>;
     // For Ni-Mh 1U
     mv-to-pct-thresholds = <1100 1150 1200 1220 1240 1260 1280 1300 1320 1350 1400>;
+};
+
+&spi0 {
+    trackball_r: trackball_r@0 {
+        status = "disabled";
+    };
+    trackball_l: trackball_l@1 {
+        status = "disabled";
+    };
 };
