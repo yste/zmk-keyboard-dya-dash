@@ -36,3 +36,7 @@ If build succeeds, the firmware shows up under `build` directory like `zmk_dya_d
 
 Trackball setting is enabled by specifying snippet `left-trackball` or `right-trackball`. (see `local_build.sh`.).
 If neither snippet is specified, trackball feature is disabled.
+
+## Default keymap
+
+![](keymap-drawer/dya_dash.svg)
