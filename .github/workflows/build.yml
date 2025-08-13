@@ -6,6 +6,10 @@ on:
       - main
   pull_request:
   workflow_dispatch:
+    inputs:
+      release:
+        description: "Create a release artifact with given version"
+        required: true
 
 jobs:
   build:
@@ -43,3 +47,26 @@ jobs:
         with:
           name: artifact-dya-dash
           path: build/artifacts
+  release:
+    if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.release != '' }}
+    needs: build
+    runs-on: ubuntu-latest
+    name: Release
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: artifact-dya-dash
+          path: build
+      - name: Create release
+        run: |
+          gh release create ${{ github.event.inputs.release }} \
+            --title "DYA Dash firmware ${{ github.event.inputs.release }}" \
+            --generate-notes \
+            --latest \
+            --target ${{ github.sha }} \
+            build/*.uf2
+        env:
+          GH_TOKEN: ${{ github.token }}
