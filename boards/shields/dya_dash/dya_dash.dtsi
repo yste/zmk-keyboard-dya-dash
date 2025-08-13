@@ -108,7 +108,7 @@
         RC(5, 3) RC(5, 2)                                              RC(5, 8) RC(4, 7) RC(5, 10) RC(5, 9)
         // TOUCH1, TOUCH2, TOUCH3, TOUCH4                              // TOUCH1 (K) , TOUCH2 (L), TOUCH3 (O), TOUCH4 (sum finger)
         // 51 52 53 54                                                 55 56 57 58
-        RC(1, 5) RC(2, 5) RC(3, 5) RC(4, 5)                            RC(1, 11) RC(2, 11) RC(3, 11) RC(4, 11)
+        RC(2, 5) RC(1, 5) RC(3, 5) RC(4, 5)                            RC(1, 11) RC(2, 11) RC(3, 11) RC(4, 11)
         >;
     };
 

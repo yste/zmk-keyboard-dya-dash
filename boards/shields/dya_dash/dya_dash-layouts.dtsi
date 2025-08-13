@@ -53,8 +53,8 @@
         , <&key_physical_attrs 100 100  915  360 (-1000)   965   410>
         , <&key_physical_attrs 125 100 1025  350       0     0     0>
         , <&key_physical_attrs 125 100 1150  350       0     0     0>
-        , <&key_physical_attrs  50  75  600   75       0     0     0>
         , <&key_physical_attrs  50  75  650   75       0     0     0>
+        , <&key_physical_attrs  50  75  600   75       0     0     0>
         , <&key_physical_attrs  50  50 1350  350       0     0     0>
         , <&key_physical_attrs  50  50 1300  400       0     0     0>
         , <&key_physical_attrs  50  50 1350  400       0     0     0>
@@ -121,8 +121,8 @@
         , <&key_physical_attrs 100 100  915  360 (-1000)   965   410>
         , <&key_physical_attrs 125 100 1025  350       0     0     0>
         , <&key_physical_attrs 125 100 1150  350       0     0     0>
-        , <&key_physical_attrs  50  75  600   75       0     0     0>
         , <&key_physical_attrs  50  75  650   75       0     0     0>
+        , <&key_physical_attrs  50  75  600   75       0     0     0>
         , <&key_physical_attrs  50  50 1300  600       0     0     0>
         , <&key_physical_attrs 100 100 1300  350       0     0     0> // Right config
         , <&key_physical_attrs  50  50 1350  600       0     0     0>
