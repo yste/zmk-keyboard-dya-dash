@@ -115,6 +115,16 @@
             key-positions = <47 49>;
             bindings = <&kp C_VOL_UP>;
         };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <14 15>;
+        };
+
+        shift_tab {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <15 16>;
+        };
     };
 
     keymap {
