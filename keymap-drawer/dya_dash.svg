@@ -130,7 +130,9 @@ path.combo {
 <g transform="translate(28, 56)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">TAB</text>
-</g>
+<a href="#Trackball-Scroll">
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 62%">Trackball Sc…</tspan></text>
+</a></g>
 <g transform="translate(84, 56)" class="key keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">Q</text>
@@ -342,40 +344,28 @@ path.combo {
 <rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key"/>
 <text x="0" y="0" class="key tap">→</text>
 </g>
-<g transform="translate(126, 133)" class="key keypos-51">
-<rect rx="6" ry="6" x="-12" y="-5" width="24" height="10" class="key"/>
-<a href="#Trackball-Manual">
-<text x="0" y="0" class="key tap layer-activator">
-<tspan x="0" dy="-0.6em" style="font-size: 89%">Trackball</tspan><tspan x="0" dy="1.2em" style="font-size: 89%">Manual</tspan>
-</text>
-</a></g>
-<g transform="translate(182, 119)" class="key keypos-52">
-<rect rx="6" ry="6" x="-12" y="-5" width="24" height="10" class="key"/>
-<a href="#Trackball-Scroll">
-<text x="0" y="0" class="key tap layer-activator">
-<tspan x="0" dy="-0.6em" style="font-size: 89%">Trackball</tspan><tspan x="0" dy="1.2em" style="font-size: 89%">Scroll</tspan>
-</text>
-</a></g>
+<g transform="translate(126, 133)" class="key trans keypos-51">
+<rect rx="6" ry="6" x="-12" y="-5" width="24" height="10" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
+</g>
+<g transform="translate(182, 119)" class="key trans keypos-52">
+<rect rx="6" ry="6" x="-12" y="-5" width="24" height="10" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
+</g>
 <g transform="translate(28, 308)" class="key keypos-53">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
 <g transform="translate(84, 308)" class="key keypos-54">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
-<g transform="translate(658, 119)" class="key keypos-55">
-<rect rx="6" ry="6" x="-12" y="-5" width="24" height="10" class="key"/>
-<a href="#Trackball-Scroll">
-<text x="0" y="0" class="key tap layer-activator">
-<tspan x="0" dy="-0.6em" style="font-size: 89%">Trackball</tspan><tspan x="0" dy="1.2em" style="font-size: 89%">Scroll</tspan>
-</text>
-</a></g>
-<g transform="translate(714, 133)" class="key keypos-56">
-<rect rx="6" ry="6" x="-12" y="-5" width="24" height="10" class="key"/>
-<a href="#Trackball-Manual">
-<text x="0" y="0" class="key tap layer-activator">
-<tspan x="0" dy="-0.6em" style="font-size: 89%">Trackball</tspan><tspan x="0" dy="1.2em" style="font-size: 89%">Manual</tspan>
-</text>
-</a></g>
+<g transform="translate(658, 119)" class="key trans keypos-55">
+<rect rx="6" ry="6" x="-12" y="-5" width="24" height="10" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
+</g>
+<g transform="translate(714, 133)" class="key trans keypos-56">
+<rect rx="6" ry="6" x="-12" y="-5" width="24" height="10" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
+</g>
 <g transform="translate(756, 308)" class="key keypos-57">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
@@ -2551,8 +2541,9 @@ path.combo {
 <rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(126, 133)" class="key held keypos-51">
-<rect rx="6" ry="6" x="-12" y="-5" width="24" height="10" class="key held"/>
+<g transform="translate(126, 133)" class="key trans keypos-51">
+<rect rx="6" ry="6" x="-12" y="-5" width="24" height="10" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g transform="translate(182, 119)" class="key trans keypos-52">
 <rect rx="6" ry="6" x="-12" y="-5" width="24" height="10" class="key trans"/>
@@ -2587,9 +2578,8 @@ path.combo {
 <g transform="translate(30, 3920)" class="layer-Trackball Scroll">
 <text x="0" y="28" class="label" id="Trackball-Scroll">Trackball Scroll:</text>
 <g transform="translate(0, 56)">
-<g transform="translate(28, 56)" class="key trans keypos-0">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(28, 56)" class="key held keypos-0">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
 <g transform="translate(84, 56)" class="key trans keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -2795,8 +2785,9 @@ path.combo {
 <rect rx="6" ry="6" x="-12" y="-5" width="24" height="10" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(182, 119)" class="key held keypos-52">
-<rect rx="6" ry="6" x="-12" y="-5" width="24" height="10" class="key held"/>
+<g transform="translate(182, 119)" class="key trans keypos-52">
+<rect rx="6" ry="6" x="-12" y="-5" width="24" height="10" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g transform="translate(28, 308)" class="key trans keypos-53">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
