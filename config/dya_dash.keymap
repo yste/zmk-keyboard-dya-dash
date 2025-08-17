@@ -145,12 +145,12 @@
             // | touch1  | touch2  | touch3  | touch 4 |                                   | touch1  | touch2  | touch3  | touch 4 |
 
             bindings = <
-&kp TAB       &kp Q        &kp W     &kp E    &kp R      &kp T  &kp Y     &kp U      &kp I     &kp O      &kp P     &kp LBKT
-&kp LCTRL     &kp A        &kp S     &kp D    &kp F      &kp G  &kp H     &kp J      &kp K     &kp L      &kp SEMI  &kp SQT
-&kp LSHIFT    &kp Z        &kp X     &kp C    &kp V      &kp B  &kp B     &kp N      &kp M     &kp COMMA  &kp DOT   &kp FSLH
-              &mo 7        &kp LWIN  &kp ESC  &kp SPACE  &mo 5  &kp RGUI  &kp SPACE  &kp RALT  &kp RWIN
-&out OUT_TOG  &out_bt_nxt                                       &kp UP    &kp LEFT   &kp DOWN  &kp RIGHT
-&mo 9         &mo 10       &none     &none                      &mo 10    &mo 9      &none     &none
+&kp TAB       &kp Q        &kp W     &kp E    &kp R      &kp T  &kp Y     &kp U        &kp I     &kp O      &kp P     &kp LBKT
+&kp LCTRL     &kp A        &kp S     &kp D    &kp F      &kp G  &kp H     &kp J        &kp K     &kp L      &kp SEMI  &kp SQT
+&kp LSHIFT    &kp Z        &kp X     &kp C    &kp V      &kp B  &kp B     &kp N        &kp M     &kp COMMA  &kp DOT   &kp FSLH
+              &mo 7        &kp LWIN  &kp ESC  &kp SPACE  &mo 5  &kp RGUI  &lt 5 ENTER  &kp RALT  &kp RWIN
+&out OUT_TOG  &out_bt_nxt                                       &kp UP    &kp LEFT     &kp DOWN  &kp RIGHT
+&mo 9         &mo 10       &none     &none                      &mo 10    &mo 9        &none     &none
             >;
         };
 
@@ -212,12 +212,12 @@
             //           |     |     |          |     |          |                           |     |         |         |     |
 
             bindings = <
-&kp ESC  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp RBKT
-&trans   &kp N1    &kp N2  &kp N3    &kp N4    &kp N5     &kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &kp BACKSLASH
-&trans   &trans    &trans  &trans    &trans    &trans     &kp GRAVE  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp RSHIFT
-         &trans    &trans  &trans    &trans    &trans     &trans     &trans     &trans     &trans
-&trans   &trans                                           &trans     &trans     &trans     &trans
-&trans   &trans    &trans  &trans                         &trans     &trans     &trans     &trans
+&kp ESC    &kp MINUS     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS   &kp F1     &kp F2     &kp F3     &kp F4    &kp F5    &kp F6
+&kp EQUAL  &kp SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTRK  &kp F7     &kp F8     &kp F9     &kp F10   &kp F11   &kp F12
+&trans     &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT    &kp GRAVE  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp RSHIFT
+           &trans        &trans        &trans        &trans        &trans     &trans     &trans     &trans     &trans
+&trans     &trans                                                             &trans     &trans     &trans     &trans
+&trans     &trans        &trans        &trans                                 &trans     &trans     &trans     &trans
             >;
         };
 
