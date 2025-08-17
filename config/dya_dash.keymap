@@ -145,48 +145,48 @@
             // | touch1  | touch2  | touch3  | touch 4 |                                   | touch1  | touch2  | touch3  | touch 4 |
 
             bindings = <
-&kp TAB           &kp Q         &kp W     &kp E     &kp R      &kp T       &kp Y         &kp U             &kp I     &kp O      &kp P     &kp LBKT
-&kp LCTRL         &kp A         &kp S     &kp D     &kp F      &kp G       &kp H         &kp J             &kp K     &kp L      &kp SEMI  &kp SQT
-&kp LSHIFT        &kp Z         &kp X     &kp C     &kp V      &kp B       &kp B         &kp N             &kp M     &kp COMMA  &kp DOT   &kp FSLH
-                  &mo CONFIG_L  &kp LWIN  &kp LALT  &kp SPACE  &mo LEFT_L  &mo RIGHT_L   &kp SPACE         &kp RALT  &kp RWIN
-&out OUT_TOG      &out_bt_nxt                                              &kp UP        &kp LEFT          &kp DOWN  &kp RIGHT
-&mo TRACKBALL_L2  &mo SCROLL_L  &none     &none                            &mo SCROLL_L  &mo TRACKBALL_L2  &none     &none
+&kp TAB       &kp Q        &kp W     &kp E    &kp R      &kp T  &kp Y     &kp U      &kp I     &kp O      &kp P     &kp LBKT
+&kp LCTRL     &kp A        &kp S     &kp D    &kp F      &kp G  &kp H     &kp J      &kp K     &kp L      &kp SEMI  &kp SQT
+&kp LSHIFT    &kp Z        &kp X     &kp C    &kp V      &kp B  &kp B     &kp N      &kp M     &kp COMMA  &kp DOT   &kp FSLH
+              &mo 7        &kp LWIN  &kp ESC  &kp SPACE  &mo 5  &kp RGUI  &kp SPACE  &kp RALT  &kp RWIN
+&out OUT_TOG  &out_bt_nxt                                       &kp UP    &kp LEFT   &kp DOWN  &kp RIGHT
+&mo 9         &mo 10       &none     &none                      &mo 10    &mo 9      &none     &none
             >;
         };
 
         windows_default_layer {
             display-name = "Windows Default";
             bindings = <
-&trans  &trans  &trans  &trans          &trans  &trans            &trans             &trans  &trans          &trans  &trans  &trans
-&trans  &trans  &trans  &trans          &trans  &trans            &trans             &trans  &trans          &trans  &trans  &trans
-&trans  &trans  &trans  &trans          &trans  &trans            &trans             &trans  &trans          &trans  &trans  &trans
-        &trans  &trans  &mt LALT LANG2  &trans  &lt LEFT_L LANG2  &lt RIGHT_L LANG1  &trans  &mt RALT LANG1  &trans
-&trans  &trans                                                    &trans             &trans  &trans          &trans
-&trans  &trans  &trans  &trans                                    &trans             &trans  &trans          &trans
+&trans  &trans  &trans  &trans          &trans  &trans       &trans       &trans  &trans          &trans  &trans  &trans
+&trans  &trans  &trans  &trans          &trans  &trans       &trans       &trans  &trans          &trans  &trans  &trans
+&trans  &trans  &trans  &trans          &trans  &trans       &trans       &trans  &trans          &trans  &trans  &trans
+        &trans  &trans  &mt LALT LANG2  &trans  &lt 5 LANG2  &lt 6 LANG1  &trans  &mt RALT LANG1  &trans
+&trans  &trans                                               &trans       &trans  &trans          &trans
+&trans  &trans  &trans  &trans                               &trans       &trans  &trans          &trans
             >;
         };
 
         mac_default_layer {
             display-name = "Mac Default";
             bindings = <
-&trans  &trans  &trans    &trans          &trans  &trans            &trans             &trans  &trans          &trans    &trans  &trans
-&trans  &trans  &trans    &trans          &trans  &trans            &trans             &trans  &trans          &trans    &trans  &trans
-&trans  &trans  &trans    &trans          &trans  &trans            &trans             &trans  &trans          &trans    &trans  &trans
-        &trans  &kp LALT  &mt LCMD LANG2  &trans  &lt LEFT_L LANG2  &lt RIGHT_L LANG1  &trans  &mt RCMD LANG1  &kp RALT
-&trans  &trans                                                      &trans             &trans  &trans          &trans
-&trans  &trans  &trans    &trans                                    &trans             &trans  &trans          &trans
+&trans  &trans  &trans    &trans          &trans  &trans       &trans       &trans  &trans          &trans    &trans  &trans
+&trans  &trans  &trans    &trans          &trans  &trans       &trans       &trans  &trans          &trans    &trans  &trans
+&trans  &trans  &trans    &trans          &trans  &trans       &trans       &trans  &trans          &trans    &trans  &trans
+        &trans  &kp LALT  &mt LCMD LANG2  &trans  &lt 5 LANG2  &lt 6 LANG1  &trans  &mt RCMD LANG1  &kp RALT
+&trans  &trans                                                 &trans       &trans  &trans          &trans
+&trans  &trans  &trans    &trans                               &trans       &trans  &trans          &trans
             >;
         };
 
         ios_default_layer {
             display-name = "iOS Default";
             bindings = <
-&trans  &trans  &trans    &trans          &trans  &trans            &trans             &trans  &trans          &trans    &trans  &trans
-&trans  &trans  &trans    &trans          &trans  &trans            &trans             &trans  &trans          &trans    &trans  &trans
-&trans  &trans  &trans    &trans          &trans  &trans            &trans             &trans  &trans          &trans    &trans  &trans
-        &trans  &kp LALT  &mt LCMD LANG2  &trans  &lt LEFT_L LANG2  &lt RIGHT_L LANG1  &trans  &mt RCMD LANG1  &kp RALT
-&trans  &trans                                                      &trans             &trans  &trans          &trans
-&trans  &trans  &trans    &trans                                    &trans             &trans  &trans          &trans
+&trans  &trans  &trans    &trans          &trans  &trans       &trans       &trans  &trans          &trans    &trans  &trans
+&trans  &trans  &trans    &trans          &trans  &trans       &trans       &trans  &trans          &trans    &trans  &trans
+&trans  &trans  &trans    &trans          &trans  &trans       &trans       &trans  &trans          &trans    &trans  &trans
+        &trans  &kp LALT  &mt LCMD LANG2  &trans  &lt 5 LANG2  &lt 6 LANG1  &trans  &mt RCMD LANG1  &kp RALT
+&trans  &trans                                                 &trans       &trans  &trans          &trans
+&trans  &trans  &trans    &trans                               &trans       &trans  &trans          &trans
             >;
         };
 
@@ -248,24 +248,24 @@
         trackball_layer {
             display-name = "Trackball Automouse";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans        &trans    &trans     &trans     &trans     &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans        &trans    &mkp LCLK  &mkp RCLK  &mkp RCLK  &mo SCROLL_L  &kp RALT
-&trans  &trans  &trans  &trans  &trans  &trans        &trans    &mkp MCLK  &mkp LCLK  &trans     &trans        &trans
-        &trans  &trans  &trans  &trans  &mo SCROLL_L  &mkp MB4  &mkp MB5   &trans     &trans
-&trans  &trans                                        &trans    &trans     &trans     &trans
-&trans  &trans  &trans  &trans                        &trans    &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &mkp LCLK  &mkp RCLK  &mkp RCLK  &mo 10  &kp RALT
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &mkp MCLK  &mkp LCLK  &trans     &trans  &trans
+        &trans  &trans  &trans  &trans  &mo 10  &mkp MB4  &mkp MB5   &trans     &trans
+&trans  &trans                                  &trans    &trans     &trans     &trans
+&trans  &trans  &trans  &trans                  &trans    &trans     &trans     &trans
             >;
         };
 
         trackball_layer2 {
             display-name = "Trackball Manual";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans        &trans    &trans     &trans     &trans     &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans        &trans    &mkp LCLK  &mkp RCLK  &mkp RCLK  &mo SCROLL_L  &kp RALT
-&trans  &trans  &trans  &trans  &trans  &trans        &trans    &mkp MCLK  &mkp LCLK  &trans     &trans        &trans
-        &trans  &trans  &trans  &trans  &mo SCROLL_L  &mkp MB4  &mkp MB5   &trans     &trans
-&trans  &trans                                        &trans    &trans     &trans     &trans
-&trans  &trans  &trans  &trans                        &trans    &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &mkp LCLK  &mkp RCLK  &mkp RCLK  &mo 10  &kp RALT
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &mkp MCLK  &mkp LCLK  &trans     &trans  &trans
+        &trans  &trans  &trans  &trans  &mo 10  &mkp MB4  &mkp MB5   &trans     &trans
+&trans  &trans                                  &trans    &trans     &trans     &trans
+&trans  &trans  &trans  &trans                  &trans    &trans     &trans     &trans
             >;
         };
 
