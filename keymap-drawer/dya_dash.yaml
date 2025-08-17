@@ -19,8 +19,8 @@ layers:
   - D
   - F
   - G
-  - {t: H, s: BACKSPACE}
-  - {t: J, s: ENTER}
+  - H
+  - J
   - K
   - L
   - ;
@@ -39,11 +39,11 @@ layers:
   - /
   - Config Layer
   - LWIN
-  - LALT
-  - SPACE
-  - Left SPACE
-  - Right SPACE
-  - SPACE
+  - ESC
+  - {t: SPACE, h: Trackball Automouse}
+  - {t: BACKSPACE, h: Right SPACE}
+  - RGUI
+  - {t: ENTER, h: Left SPACE}
   - RALT
   - RWIN
   - OUT TOG
@@ -302,35 +302,35 @@ layers:
   - {t: ▽, type: trans}
   Left SPACE:
   - ESC
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - ']'
-  - {t: ▽, type: trans}
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
+  - '-'
   - '7'
   - '8'
   - '9'
+  - +
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - '='
+  - /
+  - '4'
+  - '5'
+  - '6'
+  - '*'
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - F12
+  - {t: ▽, type: trans}
   - '0'
-  - \
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '1'
+  - '2'
+  - '3'
+  - .
   - '`'
   - '-'
   - '='
@@ -341,9 +341,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -362,16 +362,16 @@ layers:
   - {t: ▽, type: trans}
   Right SPACE:
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - PG UP
-  - ↑
-  - PG DN
-  - {t: ▽, type: trans}
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
   - AL LOCK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -379,30 +379,30 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ←
-  - ↓
-  - →
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '-'
+  - '='
+  - \
+  - '['
+  - ']'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - MUTE
-  - VOL DN
-  - VOL UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '|'
+  - '~'
+  - '`'
+  - '{'
+  - '}'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -489,6 +489,10 @@ layers:
   Trackball Automouse:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - Ctl+Sft+TAB
+  - Sft+Gui+4
+  - Ctl+TAB
+  - Sft+Gui+5
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -496,15 +500,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - HOME
+  - LEFT ARROW
+  - UP ARROW
+  - RIGHT ARROW
+  - END
   - {t: ▽, type: trans}
   - '&mkp LCLK'
   - '&mkp RCLK'
@@ -512,10 +512,10 @@ layers:
   - Trackball Scroll
   - RALT
   - {t: ▽, type: trans}
+  - Sft+Gui+LEFT ARROW
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - DOWN ARROW
+  - Sft+Gui+RIGHT ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MCLK'
@@ -526,7 +526,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - Trackball Scroll
   - '&mkp MB4'
   - '&mkp MB5'
