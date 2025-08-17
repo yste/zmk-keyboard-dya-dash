@@ -671,3 +671,7 @@ combos:
   k: VOL DN
 - p: [47, 49]
   k: VOL UP
+- p: [14, 15]
+  k: TAB
+- p: [15, 16]
+  k: Sft+TAB
